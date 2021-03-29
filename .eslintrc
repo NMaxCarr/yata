@@ -1,0 +1,14 @@
+{
+  "root": true,
+  "plugins": ["react"],
+  "extends": [
+    "airbnb-typescript-prettier",
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  }
+}
