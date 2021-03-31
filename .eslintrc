@@ -10,5 +10,15 @@
     "ecmaFeatures": {
       "jsx": true
     }
+  },
+  "rules": {
+    "jsx-a11y/label-has-associated-control": 0,
+    "react/prop-types": 0,
+    "no-alert": 0,
+    "no-console": 0,
+    "no-unused-vars": 0,
+    "@typescript-eslint/no-unused-vars": 0,
+    "react/jsx-props-no-spreading": 0,
+    "react/require-default-props": 0
   }
 }
