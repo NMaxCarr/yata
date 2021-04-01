@@ -1,4 +1,5 @@
 import React, { ReactElement } from "react";
+import { Button } from "./button";
 
 interface FilterButtonProps {
   key: string;
@@ -14,8 +15,7 @@ const FilterButton = ({
   setFilter,
 }: FilterButtonProps): ReactElement => {
   return (
-    <button
-      type="button"
+    <Button
       className="btn toggle-btn"
       aria-pressed={isPressed}
       onClick={() => setFilter(name)}
@@ -23,7 +23,7 @@ const FilterButton = ({
       <span className="visually-hidden">Show </span>
       <span>{name}</span>
       <span className="visually-hidden"> tasks</span>
-    </button>
+    </Button>
   );
 };
 

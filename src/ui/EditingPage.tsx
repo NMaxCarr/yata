@@ -21,7 +21,8 @@ const EditingTemplate = ({
     <form className="stack-small" onSubmit={(event) => onSubmitChange(event)}>
       <div className="form-group">
         <label className="todo-label" htmlFor={id}>
-          New name for {name}
+          {"New name for "}
+          {name}
         </label>
         <input
           id={id}
