@@ -1,29 +1,27 @@
+import { Chip, useTheme } from "@material-ui/core";
 import React, { ReactElement } from "react";
-import { Button } from "./button";
+import { MyTheme } from "ui/Provider";
 
 interface FilterButtonProps {
-  key: string;
   name: string;
   isPressed: boolean;
   setFilter: (value: string) => void;
 }
 
 const FilterButton = ({
-  key,
   name,
   isPressed,
   setFilter,
 }: FilterButtonProps): ReactElement => {
+  const theme = useTheme<MyTheme>();
   return (
-    <Button
-      className="btn toggle-btn"
-      aria-pressed={isPressed}
+    <Chip
+      label={name}
       onClick={() => setFilter(name)}
-    >
-      <span className="visually-hidden">Show </span>
-      <span>{name}</span>
-      <span className="visually-hidden"> tasks</span>
-    </Button>
+      style={{
+        backgroundColor: isPressed ? theme.palette.primary.dark : "#E0E0E0",
+      }}
+    />
   );
 };
 

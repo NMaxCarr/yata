@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
-import EditingTemplate from "./EditingPage";
-import ViewPage from "./ViewPage";
+import EditView from "ui/molecule/EditView";
+
+import TaskView from "ui/molecule/TaskView";
 
 export interface TodoProps {
   id: string;
@@ -11,7 +12,7 @@ export interface TodoProps {
   editTask: (id: string, newName: string) => void;
 }
 
-const Todo: React.FC<TodoProps> = (props) => {
+const TaskWidget: React.FC<TodoProps> = (props) => {
   const { name, id, editTask } = props;
 
   const editFieldRef = useRef<HTMLInputElement>(null);
@@ -50,9 +51,9 @@ const Todo: React.FC<TodoProps> = (props) => {
   }, [isEditing, wasEditing]);
 
   return (
-    <li className="todo stack-small">
+    <li>
       {isEditing ? (
-        <EditingTemplate
+        <EditView
           name={name}
           id={id}
           editTask={isEditingCallback}
@@ -61,10 +62,10 @@ const Todo: React.FC<TodoProps> = (props) => {
           ref={editFieldRef}
         />
       ) : (
-        <ViewPage {...props} editTask={isEditingCallback} ref={editButtonRef} />
+        <TaskView {...props} editTask={isEditingCallback} />
       )}
     </li>
   );
 };
 
-export default Todo;
+export default TaskWidget;

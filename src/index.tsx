@@ -1,7 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { Task } from "ui/organism/TasksList";
+import App from "ui/page/App";
 import "./index.css";
-import App, { Task } from "./App";
+
 import reportWebVitals from "./reportWebVitals";
 
 const DATA: Task[] = [

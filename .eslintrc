@@ -20,5 +20,13 @@
     "@typescript-eslint/no-unused-vars": 0,
     "react/jsx-props-no-spreading": 0,
     "react/require-default-props": 0
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"],
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
   }
 }
