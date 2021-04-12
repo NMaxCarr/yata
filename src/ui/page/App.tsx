@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import HeadingTaskCount from "ui/atom/HeadingTaskCount";
+import useStateTask from "ui/hooks/UseStateTask";
 import AddInputForm from "ui/molecule/AddInputForm";
 import TopMenu from "ui/molecule/TopMenu";
 import FilterSelector from "ui/organism/FilterSelector";
@@ -8,12 +9,8 @@ import Provider from "ui/Provider";
 import MainTemplate from "ui/template/MainTemplate";
 import { v4 as uuidv4 } from "uuid";
 
-export interface AppProps {
-  initialTasks: Task[];
-}
-
-const App: React.FC<AppProps> = ({ initialTasks }) => {
-  const [tasks, setTasks] = useState(initialTasks);
+const App: React.FC = () => {
+  const [tasks, setTasks] = useStateTask();
   const [filter, setFilter] = useState("All");
 
   const addTask = (name: string) => {

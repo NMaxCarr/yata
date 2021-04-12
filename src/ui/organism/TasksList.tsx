@@ -39,6 +39,7 @@ const TasksList = ({
   deleteTask,
   editTask,
 }: TasksListProps): ReactElement => {
+  console.log("object :>> ", tasks);
   return (
     <TasksListElementStyle aria-labelledby="list-heading">
       {tasks.filter(FILTER_MAP[selectedFilter]).map((task) => (

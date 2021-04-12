@@ -6,15 +6,9 @@ import "./index.css";
 
 import reportWebVitals from "./reportWebVitals";
 
-const DATA: Task[] = [
-  { id: "todo-0", name: "Eat", completed: true },
-  { id: "todo-1", name: "Sleep", completed: false },
-  { id: "todo-2", name: "Repeat", completed: false },
-];
-
 ReactDOM.render(
   <React.StrictMode>
-    <App initialTasks={DATA} />
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 );
