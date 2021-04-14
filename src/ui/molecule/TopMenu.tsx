@@ -18,9 +18,6 @@ const TopMenu = ({ title }: TopMenuProps): ReactElement => {
   return (
     <TopMenuBar>
       <Toolbar variant="dense">
-        <IconButton edge="start" color="inherit" aria-label="open drawer">
-          <MenuRoundedIcon fontSize="large" />
-        </IconButton>
         <Typography variant="h5">{title}</Typography>
       </Toolbar>
     </TopMenuBar>
