@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/yata/static/css/main.55057c51.chunk.css",
+    "main.js": "/yata/static/js/main.b6b3c2ac.chunk.js",
+    "main.js.map": "/yata/static/js/main.b6b3c2ac.chunk.js.map",
+    "runtime-main.js": "/yata/static/js/runtime-main.546937fc.js",
+    "runtime-main.js.map": "/yata/static/js/runtime-main.546937fc.js.map",
+    "static/js/2.16950ee9.chunk.js": "/yata/static/js/2.16950ee9.chunk.js",
+    "static/js/2.16950ee9.chunk.js.map": "/yata/static/js/2.16950ee9.chunk.js.map",
+    "static/js/3.d6fe2612.chunk.js": "/yata/static/js/3.d6fe2612.chunk.js",
+    "static/js/3.d6fe2612.chunk.js.map": "/yata/static/js/3.d6fe2612.chunk.js.map",
+    "index.html": "/yata/index.html",
+    "static/css/main.55057c51.chunk.css.map": "/yata/static/css/main.55057c51.chunk.css.map",
+    "static/js/2.16950ee9.chunk.js.LICENSE.txt": "/yata/static/js/2.16950ee9.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.546937fc.js",
+    "static/js/2.16950ee9.chunk.js",
+    "static/css/main.55057c51.chunk.css",
+    "static/js/main.b6b3c2ac.chunk.js"
+  ]
+}
